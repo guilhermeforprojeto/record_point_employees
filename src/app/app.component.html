@@ -4,6 +4,11 @@
   <po-menu [p-menus]="menus"></po-menu>
 
   <po-page-default p-title="AppName">
-    <p> AppName page </p>
+    <po-page-dynamic-table
+      p-title="Po Page Dynamic Table"
+      p-service-api="https://po-sample-api.fly.dev/v1/people"
+    >
+    </po-page-dynamic-table>
+    <!-- <po-page-login></po-page-login> -->
   </po-page-default>
 </div>

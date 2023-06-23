@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 
 import { PoMenuItem } from '@po-ui/ng-components';
+import { LoginComponent } from './login/login.component';
+
+
+
 
 @Component({
   selector: 'app-root',
@@ -10,7 +14,8 @@ import { PoMenuItem } from '@po-ui/ng-components';
 export class AppComponent {
 
   readonly menus: Array<PoMenuItem> = [
-    { label: 'Home', action: this.onClick.bind(this) }
+    { label: 'Home', action: this.onClick.bind(this) },
+    { label: 'Criar', action: this.onClick.bind(this) }
   ];
 
   private onClick() {
